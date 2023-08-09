@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Rosso Gourmet - Pedix</title>
+    <link href=".././imgs/icon.png" rel="shortcut icon">
+    <link href=" .././assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet">
+    <link href="../custom.css" rel="stylesheet">
+  
+
+</head>
+
+<body class="bg-white">
+  
+<nav class="bg-[#C21111] sm:fixed w-full z-20 top-0 font-nunito left-0   ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="" class="flex items-center">
+        <img src="../imgs/logo.png" class="h-8 mr-3" >
+     
+    </a>
+    <div class="flex md:order-2">
+        
+        <button onclick="openMenu()" id="mobilebtn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-black/10 " aria-controls="navbar-sticky" aria-expanded="false">
+          <i class="fa-solid fa-bars fa-xl"></i>
+      </button>
+    </div>
+    <div  class=" w-full md:flex md:w-auto md:order-2" >
+      <ul  id="mobilemenu"  class="sm:flex hidden flex-col  text-right md:p-0 mt-4 font-bold gap-4  rounded-lg  md:flex-row  md:mt-0 md:border-0 ">
+        <li>
+            <a href="#1" class="block py-2 pl-3 pr-4  text-white rounded hover:bg-black/10 group  "><i class=" group-hover:mr-2 -mr-4 duration-500 opacity-0 group-hover:opacity-100 fa-solid fa-home"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="#2" class="block py-2 pl-3 pr-4  text-white rounded hover:bg-black/10 group  "><i class=" group-hover:mr-2 -mr-4 duration-500 opacity-0 group-hover:opacity-100 fa-solid fa-gift"></i> Promoções</a>
+        </li>
+        <li>
+          <a href="#3" class="block py-2 pl-3 pr-4 text-white rounded bg-black/10   "><i class="fa-solid fa-cart-shopping mr-2"></i> Carrinho</a>
+        </li>
+    
+      </ul>
+    </div>
+    </div>
+  
+  </nav>
+  
+
+<script src="../assets/scrollreveal.js"></script>
+<script>
+
+
+
+
+</script>
+<script>
+    mobilemenu = document.getElementById("mobilemenu")
+  mobilebtn = document.getElementById("mobilebtn")
+  function openMenu() {
+
+    if (mobilemenu.style.display == "none") {
+      mobilebtn.innerHTML = `<i class="fa-solid fa-xl fa-xmark"></i>`
+      mobilemenu.style.display = "block"
+    } else {
+      mobilebtn.innerHTML = `<i class="fa-solid fa-xl fa-bars"></i>`
+      mobilemenu.style.display = "none"
+    }
+  }
+</script>
+  
+
+<script>
+    ScrollReveal().reveal('.flip', { rotate: { x: 20, z: 180 }, duration: 1000, delay: 300 });
+    ScrollReveal().reveal('.reveal_bottom', { origin: 'bottom', distance: '400px', delay: 300 });
+    ScrollReveal().reveal('.reveal_top', { easing: 'ease-in-out', origin: 'top', distance: '400px', delay: 300 });
+    ScrollReveal().reveal('.reveal_left_delay', { origin: 'left', distance: '100px', delay: 700 });
+    ScrollReveal().reveal('.reveal_right_delay', { origin: 'left', distance: '100px', delay: 700 });
+    ScrollReveal().reveal('.reveal_left', { origin: 'left', distance: '100px', delay: 400 });
+    ScrollReveal().reveal('.reveal_right', { origin: 'right', distance: '100px', delay: 400 });
+    ScrollReveal().reveal('.reveal_left_pic', { easing: "ease-in-out", origin: 'left', distance: '10px', delay: 400 });
+    ScrollReveal().reveal('.reveal_right_pic', { easing: "ease-in-out", origin: 'right', distance: '10px', delay: 400 });
+    ScrollReveal().reveal('.scale_up', { scale: 0.85, delay: 500 });
+</script>
+
+</html>
